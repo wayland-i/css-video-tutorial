@@ -32,6 +32,10 @@ table, th, td {
   padding: 1%;
 }
 
+table {
+  display: inline-block ;
+}
+
 img {
   border: 10px solid blue;
   margin: 10px;
@@ -44,7 +48,7 @@ img {
 }
 
 #gradient {
-  padding: 100px;
+  padding: 80px;
   width: 20%;
   height: 20%;
   background: linear-gradient(to bottom right, rgb(0, 255, 126), rgb(0, 255, 126, 0));
@@ -53,4 +57,88 @@ img {
   margin-bottom: 1%;
   display: block;
   /* background: radial-gradient(circle, red 20%, blue 40%, green 55%); */
+  float: right;
+}
+
+
+.container {
+  background-color: rgb(250, 250, 250);
+  margin: 10px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-item {
+  background: rgb(36, 130, 39);
+  color: white;
+  font-size: 25px;
+  text-align: center;
+
+  width: 70px;
+  line-height: 50px;
+  margin: 10px;
+
+}
+
+
+.container-item:hover {
+  background: lightblue;
+}
+
+
+
+.grid-container {
+  background-color: rgb(250, 250, 250);
+  margin: 10px;
+  height: 500px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 300px 150px;
+  /* justify-content: space-around;
+  align-content: space-evenly; */
+}
+
+.grid-item {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+
+  width: 70px;
+  line-height: 40px;
+  margin: 10px;
+}
+
+.grid-item:hover {
+  background-color: blue;
+}
+
+.form {
+  margin: 10px;
+}
+ 
+.form-button {
+  margin: 20px 10px;
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  background: rgb(89, 150, 255);
+  transition: all 300ms ease;
+
+}
+
+
+.form-button:hover {
+  background: lightblue;
+  padding: 20px 30px;
 }

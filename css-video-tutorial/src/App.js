@@ -37,8 +37,33 @@ function App() {
       <div id="gradient"></div>
 
       <img src="https://i.pinimg.com/originals/e4/a1/74/e4a174cd93aca42b85636cf54b4ad08d.jpg" alt="Single Koala"></img>
+    
       
 
+      <div class="container">
+        <div class="container-item" style={{ order: "4"}}>A</div>
+        <div class="container-item" style={{ order: "3"}}>B</div>
+        <div class="container-item" style={{ order: "5"}}>C</div>
+        <div class="container-item" style={{ order: "1"}}>D</div>
+        <div class="container-item" style={{ order: "2"}}>E</div>
+      </div>
+
+
+      <div class="grid-container">
+        <div class="grid-item" style={{ background: "rgb(255, 150, 150)"}}>1</div>
+        <div class="grid-item" style={{ background: "rgb(170, 255, 140)"}}>2</div>
+        <div class="grid-item" style={{ background: "rgb(222, 132, 255)"}}>3</div>
+        <div class="grid-item" style={{ background: "rgb(255, 207, 119)"}}>4</div>
+        <div class="grid-item" style={{ background: "rgb(140, 210, 255)"}}>5</div>
+      </div>
+
+      <form class="form">
+        <h1>Contact Us</h1>
+        <input placeholder="Full Name" style={{ margin: "10px" }}></input> <br></br>
+        <input placeholder="Email" style={{ margin: "10px" }}></input> <br></br>
+        <textarea style={{ margin: "10px" }}></textarea> <br></br>
+        <button class="form-button">Submit</button>
+      </form>
     </>
   )
 }
